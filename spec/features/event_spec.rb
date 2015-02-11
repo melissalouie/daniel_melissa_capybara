@@ -32,4 +32,12 @@ describe 'User can CRUD Events' do
 
   end
 
+  scenario 'User can visit a show page for an event' do
+
+    click_on 'Dinner Party'
+
+    expect(page).to have_content('2015-01-01')
+
+  end
+
 end
