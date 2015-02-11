@@ -40,4 +40,19 @@ describe 'User can CRUD Events' do
 
   end
 
+  scenario 'User can edit an event' do
+
+    click_on 'Edit'
+
+    fill_in('event[description]', :with => 'Slumber Party' )
+    fill_in('event[date]', :with => '03/02/2015' )
+    check('event[requires_id]')
+
+    click_on 'Update Event'
+
+    expect(page).to have_content('Slumber Party')
+
+  end
+
+
 end
