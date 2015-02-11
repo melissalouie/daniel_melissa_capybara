@@ -41,7 +41,7 @@ DONE
 - Users can create a location. DONE
 - Users can see a show page for location. DONE
 - Users can edit a location. DONE
-- Users can delete a location.
+- Users can delete a location. DONE
 
 
 ###### Events
