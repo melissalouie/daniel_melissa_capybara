@@ -54,5 +54,14 @@ describe 'User can CRUD Events' do
 
   end
 
+  scenario 'User can delete an event' do
+
+    click_on 'Delete'
+
+    page.should have_no_content('Slumber Party')
+    
+  end
+
+
 
 end
