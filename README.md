@@ -33,13 +33,14 @@ Capybara cheat sheet: https://gist.github.com/zhengjia/428105
 
 ###### Home page
 - Users can visit homepage and see Locations
+DONE
 
 
 
 ###### Locations
-- Users can create a location.
-- Users can see a show page for location.
-- Users can edit a location.
+- Users can create a location. DONE
+- Users can see a show page for location. DONE
+- Users can edit a location. DONE
 - Users can delete a location.
 
 

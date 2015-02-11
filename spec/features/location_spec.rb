@@ -79,7 +79,23 @@ describe 'User can CRUD locations' do
 
 
   scenario 'User can delete a location' do
-    #fill in
+    visit '/'
+
+    # click on link to go to new location form
+    click_on "New Location"
+
+    #filling out form for location
+    fill_in 'location[name]', :with => "Home"
+    fill_in 'location[address]', with: "New Address"
+    fill_in 'location[zipcode]', with: "90210"
+
+    #submitting form to create a location
+    click_on "Create Location"
+
+    click_on "Delete"
+
+    page.should have_no_content('Home')
+    
   end
 
 
